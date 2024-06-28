@@ -4,7 +4,7 @@ cd datasets
 mkdir Models
 cd Models
 
-curl -L https://github.com/fregu856/deeplabv3/blob/master/pretrained_models/resnet/resnet34-333f7ec4.pth -o resnet34-333f7ec4.pth
+curl -L https://download.pytorch.org/models/resnet34-333f7ec4.pth -o resnet34-333f7ec4.pth
 curl -L https://download.pytorch.org/models/resnet50-11ad3fa6.pth -o resnet50-11ad3fa6.pth
 #curl -L https://huggingface.co/timm/vit_base_r50_s16_224.orig_in21k/resolve/main/pytorch_model.bin?download=true -o hvit_base_r50_s16_224.orig_in21k.bin
 curl -L https://huggingface.co/timm/vit_small_r26_s32_224.augreg_in21k/resolve/main/pytorch_model.bin?download=true -o hvit_small_r26_s32_224.augreg_in21k.bin
