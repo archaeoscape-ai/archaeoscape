@@ -1,0 +1,12 @@
+defaults:
+  - _seg_default
+
+net:
+  _target_: src.models.components.timmNet.timmNet
+  backbone: PVT_small
+  pretrained: False
+  pretrained_path: datasets/Models/pvt_small.pth
+  segmentation_head:
+    _partial_: True
+    _target_: src.models.components.utils.SimpleSegmentationHead
+    decoder_stride: 32

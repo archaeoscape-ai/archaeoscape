@@ -1,0 +1,34 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /trainer: gpu
+  - override /model: _MAE_default
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["MAE"]
+
+data:
+  generate_targets: false
+
+logger:
+  wandb:
+    tags: ${tags}
+
+# general MAE setup
+callbacks:
+  early_stopping:
+    monitor: val/loss
+    mode: min
+  model_checkpoint:
+    monitor: val/loss
+    mode: min
+
+trainer:
+  max_epochs: 200
+
+test: False
