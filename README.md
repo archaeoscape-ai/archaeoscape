@@ -18,7 +18,7 @@ polygons have been drawn and field-verified by archaeologists, delineating anthr
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
+git clone https://github.com/archaeoscape-ai/archaeoscape
 cd your-repo-name
 
 # create conda environment and install dependencies
