@@ -55,7 +55,7 @@ Train Unet with default configuration
 python src/train.py model=Unet
 ```
 
-The list of all commands used for the experiments in the paper can be found in `scripts/archeoscape.sh`. Some of them make use of the [hydra multirun functionality](https://hydra.cc/docs/tutorials/basic/running_your_app/multi-run/)
+The list of all commands used for the experiments in the paper can be found in `scripts/benchmark.sh`. Some of them make use of the [hydra multirun functionality](https://hydra.cc/docs/tutorials/basic/running_your_app/multi-run/)
 
 ## Pretrained models
 
