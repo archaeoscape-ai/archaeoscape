@@ -25,7 +25,7 @@ class SimpleConvBackbone:
     pass  # declared later
 
 
-class HViT(nn.Module):
+class ViT(nn.Module):
     """HViT model implementation."""
 
     def __init__(

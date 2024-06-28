@@ -2,10 +2,10 @@ defaults:
   - _seg_default
 
 net:
-  _target_: src.models.components.HViT.HViT
+  _target_: src.models.components.ViT.ViT
   embedder:
     _partial_: true
-    _target_: src.models.components.HViT.LinearEmbedding
+    _target_: src.models.components.ViT.LinearEmbedding
   ViT_patch_size: 16
   ViT_embed_dim: 384
   ViT_depth: 12

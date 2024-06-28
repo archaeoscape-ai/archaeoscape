@@ -27,6 +27,17 @@ conda env create -f environment.yaml -n myenv
 # activate conda environment
 conda activate myenv
 ```
+### Download model pretrained on ImageNet
+A script is given(`scripts/download_pretrained.sh`) to automatize the downloading of all model finetuned in the benchmark.
+```bash
+# make script executable
+chmod +x scripts/download_pretrained.sh
+
+run script
+scripts/download_pretrained.sh
+```
+
+Note: Larger model not use in the benchmark are commented out in the script. For all of them an associated config file is also given.
 
 ## How to run
 This code make extensive use of hydra functionality. See [hydra documentation](https://hydra.cc/docs/intro/) for more information on hydra.

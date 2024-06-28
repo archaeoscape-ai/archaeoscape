@@ -65,3 +65,4 @@ dependencies:
       - hydra-colorlog
       - rootutils
       - triangle
+      - segmentation-models-pytorch

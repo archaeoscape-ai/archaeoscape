@@ -36,6 +36,5 @@ test_overlap: ${data.test_overlap}
 # Compile model for faster training with pytorch 2.0
 compile: false
 num_classes: ${model.net.num_classes}
-aux_loss_factor: 0.0 # Whether to use auxilary loss for training the token embedding model
-# use_model_loss: False Not applicable to any model
+
 
